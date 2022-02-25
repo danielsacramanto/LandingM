@@ -150,7 +150,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin-top: 100px;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(218 255 255) 11.3%, rgb(195 255 255) 41.2%, rgb(193 255 255) 77.8% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(192 255 255) 11.3%, rgb(241 255 255) 41.2%, rgb(196 239 255) 77.8% );
     padding-top: 65px;
     padding-bottom: 25px;
     border-top: 1px solid cyan;
@@ -236,7 +236,7 @@ img {
 /* Start Landing Section */
 .landing {
     padding-top: 50px;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(218 255 255) 11.3%, rgb(195 255 255) 41.2%, rgb(193 255 255) 77.8% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%, rgb(192 255 255) 11.3%, rgb(241 255 255) 41.2%, rgb(196 239 255) 77.8% );
     max-width: 90%;
     align-items: center;
     margin-left: 5%;
