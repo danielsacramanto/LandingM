@@ -30,8 +30,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient( 68.4deg, rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2% );
 }
 a {
   text-decoration: none;
@@ -61,39 +62,39 @@ img {
 /* Small Screens */
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+        width: 90%;
   }
 }
 /* Medium Screens */
 @media (min-width: 992px) {
   .container {
-    width: 970px;
+        width: 90%;
   }
 }
 /* Large Screens */
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+        width: 90%;
   }
 }
 /* End Global Rules */
 
 /* Start Utility Classes */
 .btn {
-  text-transform: capitalize;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 6px 15px;
-  transition: var(--main-transition), background-color var(--f-transition);
+    text-transform: capitalize;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 6px 15px;
+    transition: var(--main-transition), background-color var(--f-transition);
 }
 .btn-primary {
-  background: var(--third-color);
-  color: #fff;
+    background: #ff7f00;
+    color: #fff;
 }
 .btn-primary:hover {
-  background: var(--light-third-color);
+  background: #df6f00;
 }
 .scale-effect:active {
   transform: scale(0.88);
@@ -130,29 +131,32 @@ img {
   }
 }
 .btns-group {
-  margin-top: 20px;
-  display: flex;
-  text-align: center;
-  gap: 10px;
+    margin-top: 37px;
+    display: flex;
+    text-align: center;
+    gap: 10px;
 }
 /* End Utility Classes */
 
 /* Start Header */
 .navbar {
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  padding: 15px 0;
-  background: #fff;
-  z-index: 99;
-  border-bottom: 1px solid aliceblue;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
 }
 .navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(218 255 255) 11.3%, rgb(195 255 255) 41.2%, rgb(193 255 255) 77.8% );
+    padding-top: 65px;
+    padding-bottom: 25px;
+    border-top: 1px solid cyan;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding-left: 30px;
 }
 .navbar .logo {
   color: var(--main-color);
@@ -190,13 +194,13 @@ img {
   }
 }
 .nav-links a {
-  position: relative;
-  display: inline-block;
-  text-transform: capitalize;
-  margin-right: 25px;
-  color: var(--second-color);
-  font-weight: 500;
-  font-size: 16px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 25px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
 }
 @media (max-width: 992px) {
   .nav-links a {
@@ -211,15 +215,15 @@ img {
   right: 20px;
 }
 .navbar .toggle-menu {
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  color: var(--second-color);
-  font-size: 22px;
-  cursor: pointer;
-  display: none;
-  transition: var(--main-transition);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--second-color);
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+    transition: var(--main-transition);
 }
 @media (max-width: 992px) {
   .navbar .toggle-menu {
@@ -230,18 +234,27 @@ img {
 
 /* Start Landing Section */
 .landing {
-  height: 100vh;
+    padding-top: 50px;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgb(218 255 255) 11.3%, rgb(195 255 255) 41.2%, rgb(193 255 255) 77.8% );
+    max-width: 90%;
+    align-items: center;
+    margin-left: 5%;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    max-height: 520px;
 }
 .landing .container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 90%;
 }
 .landing .text {
-  text-align: start;
-  flex: 1;
+    text-align: start;
+    flex: 1;
+    padding-left: 0px;
+    padding-top: 20px;
 }
 @media (max-width: 992px) {
   .landing .text {
@@ -295,8 +308,9 @@ img {
   }
 }
 .landing .image {
-  flex: 0.85;
-  z-index: -1;
+    flex: 0.85;
+    z-index: 99999;
+    max-width: 465px;
 }
 @media (max-width: 992px) {
   .landing .image {
@@ -437,12 +451,12 @@ textarea:focus {
 
 /* Start Footer */
 .footer {
-  background: aliceblue;
-  padding: 15px 0;
-  text-transform: capitalize;
-  text-align: center;
-  color: var(--main-color);
-  font-size: 17px;
+    background: transparent;
+    padding: 15px 0;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--main-color);
+    font-size: 17px;
 }
 .footer a {
   font-weight: 500;
