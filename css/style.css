@@ -315,6 +315,8 @@ img {
     flex: 0.85;
     z-index: 99999;
     max-width: 465px;
+    padding-top: 25px;
+    padding-right: 40px;
 }
 @media (max-width: 992px) {
   .landing .image {
